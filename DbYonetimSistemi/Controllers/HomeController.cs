@@ -15,6 +15,7 @@ namespace DbYonetimSistemi.Controllers
 
         public IActionResult Index()
         {
+            int id = 0; 
             return View();
         }
 
