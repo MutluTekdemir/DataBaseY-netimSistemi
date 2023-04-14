@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewData["Title"] = "Mutlu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+    List<string> newList = new(){ "mutlu", "onur" };
+
+}
+
+<h1>Mutlu</h1>
+<table>
+    <thead>
+        <tr>
+            <th>
+                İsim
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+      
+            @foreach (var item in newList)
+            {
+            <tr>
+                <td>
+                    @item
+                </td>
+            </tr>
+            }
+     
+    </tbody>
+</table>

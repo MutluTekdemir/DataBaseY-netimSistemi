@@ -7,7 +7,6 @@ namespace DbYonetimSistemi.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        string GitDeneme;
         public HomeController(ILogger<HomeController> logger)
         {
             _logger = logger;
@@ -19,6 +18,15 @@ namespace DbYonetimSistemi.Controllers
             return View();
         }
 
-   
+        public IActionResult Mutlu()
+        {
+
+            return View();
+        }
+        public IActionResult Onur()
+        {
+
+            return View();
+        }
     }
 }
